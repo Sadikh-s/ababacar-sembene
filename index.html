@@ -1,44 +1,160 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mon Profil - PhD Student</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Ababacar Sembene</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+    body {
+      background: linear-gradient(to right, #1c2324, #485153);
+      color: #c4bab1;
+      font-family: 'Lato', sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      position: relative;
+    }
+    .profile-pic {
+      width: 260px;
+      border-radius: 12px;
+      position: absolute;
+      right: 0;
+      top: 20px;
+      box-shadow: 0 4px 12px rgba(135, 135, 139, 0.45);
+    }
+
+    .email {
+      width: 260px;
+      border-radius: 12px;
+      position: absolute;
+      left: 645px;
+      top: 270px;
+    }
+
+    .cv {
+      width: 260px;
+      border-radius: 12px;
+      position: absolute;
+      left: 700px;
+      top: 299px;
+    }
+
+    a {
+      color: #4ea3ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      color: #82c3ff;
+    }
+    h1 {
+      margin-top: 0;
+      font-size: 2.5em;
+    }
+    section {
+      margin-top: 30px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #333;
+    }
+    details {
+      background: #283233;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      cursor: pointer;
+    }
+    summary {
+      font-size: 1.3em;
+      font-weight: bold;
+      outline: none;
+    }
+    ul li { margin-bottom: 10px; }
+    .emoji-title { font-size: 1.3em; margin-right: 6px; }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Ton Nom Complet</h1>
-    <h2>Doctorant(e) / PhD Student en [Domaine]</h2>
-  </header>
+  <div class="container">
 
-  <section>
-    <h3>📌 Profil</h3>
-    <p>Je suis doctorant(e) au sein de [Université/Laboratoire] où je travaille sur [Sujet de recherche].</p>
-  </section>
+    <h1 style="padding-left:100px;">📌 Ababacar SEMBENE</h1>
+    <p style="font-size:1.2em;padding-left:160px;padding-bottom:30px;">🎓 PhD Student in AI & Medical Imaging</p>
+    
+    <p style="margin-bottom: 30px;"> <a href="https://team.inria.fr/statify" target="_blank">STATIFY Team – INRIA Grenoble</a></p>
 
-  <section>
-    <h3>📚 Publications</h3>
-    <ul>
-      <li>Auteur(s), *Titre*, Journal/Conférence, Année.</li>
-    </ul>
-  </section>
+    <p class="email" style="margin-bottom: 10px;">ababacar dot sembene at inria dot fr</a><br>
 
-  <section>
-    <h3>🧪 Projets de recherche</h3>
-    <p>Description courte de tes travaux.</p>
-  </section>
 
-  <section>
-    <h3>📄 Mon CV</h3>
-    <p><a href="cv.pdf" target="_blank">📎 Télécharger mon CV</a></p>
-  </section>
+    <p class="cv" style="margin-bottom: 100px;">📄 <a href="cv.pdf" target="_blank">Curriculum Vitae</a></p>
+    <section style="padding-right: 300px;">
 
-  <footer>
-    <p>Contact : <a href="mailto:tonemail@exemple.com">tonemail@exemple.com</a></p>
-    <p><a href="https://www.linkedin.com/">LinkedIn</a> |
-       <a href="https://scholar.google.com/">Google Scholar</a> |
-       <a href="https://orcid.org/">ORCID</a></p>
-  </footer>
+    <img src="photo.jpg" class="profile-pic" alt="Profile Photo" />
+      <p>Graduate of École Polytechnique and ENS Paris-Saclay with strong expertise in applied mathematics, machine learning, and computer vision.</p>
+      <p>I am currently a PhD student at INRIA Grenoble within the <b>STATIFY</b> team, working on <b>generative models for unsupervised anomaly detection in spatio‑temporal medical data</b>. This project aims to design modern AI systems capable of detecting subtle anomalies in dynamic imaging sequences.</p>
+      
+    </section>
+      
+
+    <section>
+      <details>
+        <summary><span class="emoji-title">🎓</span>Education</summary>
+        <ul>
+          <li><b>INRIA</b> – PhD Student (2025 – Present)</li>
+          <li><b>ENS Paris-Saclay</b> — MVA Master's (2022 – 2023)</li>
+          <li><b>École Polytechnique</b> — Engineering Program (2019 – 2022)</li>
+          <li><b>University Cheikh Anta Diop</b> — BSc Mathematics & CS (2016 – 2019)</li>
+        </ul>
+      </details>
+    </section>
+
+    <section>
+      <details>
+        <summary><span class="emoji-title">💼</span>Professional Experience</summary>
+        <h3>🧠 Data Scientist & Engineer — MEDADOM (Jan. 2024 – Aug. 2025)</h3>
+        <p style="margin-left:30px;">NLP, statistical analysis, LLM pipelines, AWS, Tableau, Bedrock co-pilot.</p>
+
+        <h3>🔬 Research Intern — GUERBET (Apr. 2023 – Sep. 2023)</h3>
+        <p style="margin-left:30px;">Deep learning for DICOM classification (LSTM, ResNet, MONAI).</p>
+
+        <h3>🤖 AI Data Scientist — OMIZ & X Projects (May 2022 – Jul. 2022)</h3>
+        <p style="margin-left:30px;">Yoga pose detection using OpenCV & Mediapipe.</p>
+
+        <h3>🚗 Data Scientist Intern — Insight Signals (Mar. 2022 – Aug. 2022)</h3>
+        <p style="margin-left:30px;">Urban mobility simulation, optimal routing, multi-agent modeling.</p>
+      </details>
+    </section>
+
+    <section>
+      <details>
+        <summary><span class="emoji-title">🛠️</span>Skills</summary>
+        <ul>
+          <li><b>Programming:</b> Python, C++, JavaScript, R</li>
+          <li><b>ML:</b> Scikit-learn, PyTorch, TensorFlow, XGBoost, MONAI</li>
+          <li><b>Data:</b> Pandas, NumPy, Tableau, Matplotlib</li>
+          <li><b>Other:</b> AWS, Azure, Git, LaTeX</li>
+        </ul>
+      </details>
+    </section>
+
+    <section>
+      <details>
+        <summary><span class="emoji-title">🌍</span>Languages</summary>
+        <ul>
+          <li>French: C2</li>
+          <li>English: C1</li>
+          <li>Wolof: Native</li>
+        </ul>
+      </details>
+    </section>
+
+    <section>
+      <details>
+        <summary><span class="emoji-title">✨</span>Interests</summary>
+        <p style="margin-left:100px;">🎨 Drawing, 🖼️ Infographics, 🐎 Horse Riding, 📷 Photography, 🧩 Competitive Coding</p>
+      </details>
+    </section>
+
+  </div>
 </body>
 </html>
